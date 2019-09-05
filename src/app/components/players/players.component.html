@@ -1,0 +1,34 @@
+<div class="players" [class.font-decreased]="isAppBoxWidthSmall()">
+  <div class="player">
+      <a [attr.href]="setLinkImg(0)" target='_blank'>
+          <div [ngClass]="setImgClass(0)">
+          </div>
+      </a>
+      <p *ngIf="fetchedPlayersArray?.players" class="player-para player-name">{{ fetchedPlayersArray?.players[currentPlayerIndex]?.name }}</p>
+      <p *ngIf="fetchedPlayersArray?.players" class="player-para">{{ fetchedPlayersArray?.players[currentPlayerIndex]?.attribute }}</p>
+  </div>
+  <div class="player">
+      <a [attr.href]="setLinkImg(1)" target='_blank'>
+          <div [ngClass]="setImgClass(1)">
+          </div>
+      </a>
+      <p *ngIf="fetchedPlayersArray?.players" class="player-para player-name">{{ fetchedPlayersArray?.players[currentPlayerIndex+1]?.name }}</p>
+      <p *ngIf="fetchedPlayersArray?.players" class="player-para">{{ fetchedPlayersArray?.players[currentPlayerIndex+1]?.attribute }}</p>
+  </div>
+  <div class="player">
+      <a [attr.href]="setLinkImg(2)" target='_blank'>
+          <div [ngClass]="setImgClass(2)">
+          </div>
+      </a>
+      <p *ngIf="fetchedPlayersArray?.players" class="player-para player-name">{{ fetchedPlayersArray?.players[currentPlayerIndex+2]?.name }}</p>
+      <p *ngIf="fetchedPlayersArray?.players" class="player-para">{{ fetchedPlayersArray?.players[currentPlayerIndex+2]?.attribute }}</p>
+  </div>
+  <div class="player">
+      <a [attr.href]="setLinkImg(3)" target='_blank'>
+          <div [ngClass]="setImgClass(3)">
+          </div>
+      </a>
+      <p *ngIf="fetchedPlayersArray?.players" class="player-para player-name">{{ fetchedPlayersArray?.players[currentPlayerIndex+3]?.name }}</p>
+      <p *ngIf="fetchedPlayersArray?.players" class="player-para">{{ fetchedPlayersArray?.players[currentPlayerIndex+3]?.attribute }}</p>
+  </div>
+</div>

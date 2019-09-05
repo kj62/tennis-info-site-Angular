@@ -1,0 +1,121 @@
+$font-standard: 'Nunito', Helvetica, Arial, sans-serif;
+
+%technique-vid{
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width: 600px;
+    min-width: 600px;
+    height: 360px;
+    min-height: 360px;
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+%technique-paragraph{
+    margin: 0;
+    font-size: $font-standard;
+    text-shadow: 3px 3px 3px #979797;
+}
+
+%technique-name-para{
+    font-size: 28px;
+    font-weight: bold;
+    font-style: oblique;
+    margin-top: 10px;
+}
+
+%technique-vid-para{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    align-items: center;
+    margin-top: -100px;
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+.technique {
+    display: flex;
+    flex-direction: column;
+
+    .technique-box{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        flex: 1 1 auto;
+        align-items: center;
+        width: 100%;
+        margin: 0 auto;
+        max-width: 100%;
+        min-width: 50%;
+        height: 540px;
+        max-height: 860px;
+        padding-left: 0;
+        font-size: 24px;
+        font: $font-standard;
+        line-height: 36px;
+        overflow: hidden;
+    
+        &.font-decreased{
+            font-size: 16px;
+        }
+    
+        .technique-1, .technique-2{
+            @extend %technique-vid-para;
+        }
+    
+        .technique-1{    
+            p.technique-1-para{
+                @extend %technique-paragraph;
+            }
+    
+            p.technique-name{
+                @extend %technique-name-para;
+            }
+        }
+    
+        .technique-2{
+            p.technique-2-para{
+                @extend %technique-paragraph;
+            }
+    
+            p.technique-name{
+                @extend %technique-name-para;
+            }
+        }
+    }
+
+    .nav-buttons{
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        background-color: rgba(224, 224, 224,0.4);
+        padding: 10px 0 10px 0;
+        margin-top: -60px;
+
+        .prev-btn, .next-btn{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 150px;
+            min-width: 150px;
+            height: 50px;
+            min-height: 50px;
+            font-size: 24px;
+            font-weight: bold;
+            border: 2px solid #000;
+            border-radius: 10px;
+            background-color: rgba(193, 193, 193, 0.8);
+            background-size: cover;
+
+            &:hover{
+                cursor: pointer;
+                transform: scale(1.15);
+                transition: all 0.25s ease;
+            }
+        }
+    }
+}

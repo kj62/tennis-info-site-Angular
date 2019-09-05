@@ -1,0 +1,30 @@
+<div class="tournaments" [class.font-decreased]="isAppBoxWidthSmall()">
+  <div class="tournaments-box">
+    <div class="tour-1">
+      <a [attr.href]="setLinkImgOne(currentTournamentIndex)" target='_blank'>
+        <div [ngClass]="setImgOneClass(currentTournamentIndex)">
+        </div>
+      </a>
+      <p *ngIf="fetchedTournamentArray?.tournaments" class="tour-1-para tour-name">{{ fetchedTournamentArray?.tournaments[currentTournamentIndex]?.name }}</p>
+      <p *ngIf="fetchedTournamentArray?.tournaments" class="tour-1-para">Date: {{ fetchedTournamentArray?.tournaments[currentTournamentIndex]?.date }}</p>
+      <p *ngIf="fetchedTournamentArray?.tournaments" class="tour-1-para">Current champion: {{ fetchedTournamentArray?.tournaments[currentTournamentIndex]?.currentChampion }}</p>
+    </div>
+    <div class="tour-2">
+      <a [attr.href]="setLinkImgTwo(currentTournamentIndex + 1)" target='_blank'>
+        <div [ngClass]="setImgTwoClass(currentTournamentIndex)">
+        </div>
+      </a>
+      <p *ngIf="fetchedTournamentArray?.tournaments" class="tour-2-para tour-name">{{ fetchedTournamentArray?.tournaments[currentTournamentIndex + 1]?.name }}</p>
+      <p *ngIf="fetchedTournamentArray?.tournaments" class="tour-2-para">Date: {{ fetchedTournamentArray?.tournaments[currentTournamentIndex + 1]?.date }}</p>
+      <p *ngIf="fetchedTournamentArray?.tournaments" class="tour-2-para">Current champion: {{ fetchedTournamentArray?.tournaments[currentTournamentIndex + 1]?.currentChampion }}</p>
+    </div>
+  </div>
+  <div class="nav-buttons">
+    <div *ngIf="currentTournamentIndex" (click)="decrementTournamentImgIndex()" class="prev-btn">
+      Previous
+    </div>
+    <div *ngIf="isTournamentListEnd()" (click)="incrementTournamentImgIndex()" class="next-btn">
+      Next
+    </div>
+  </div>
+</div>

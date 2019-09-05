@@ -1,0 +1,209 @@
+$font-standard: 'Nunito', Helvetica, Arial, sans-serif;
+
+%tournament-img{
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width: 600px;
+    min-width: 600px;
+    height: 360px;
+    min-height: 360px;
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+%tour-paragraph{
+    margin: 0;
+    font-size: $font-standard;
+    text-shadow: 3px 3px 3px #979797;
+}
+
+%tour-name{
+    font-size: 28px;
+    font-weight: bold;
+    font-style: oblique;
+    margin-top: -5px;
+}
+
+%tour-img-para{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    height: 75%;
+    margin-top: -120px;
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+.tournaments {
+    display: flex;
+    flex-direction: column;
+
+    .tournaments-box{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        flex: 1 1 auto;
+        align-items: center;
+        width: 100%;
+        margin: 0 auto;
+        max-width: 100%;
+        min-width: 50%;
+        height: 540px;
+        max-height: 860px;
+        padding-left: 0;
+        font-size: 24px;
+        font: $font-standard;
+        line-height: 36px;
+        overflow: hidden;
+    
+        &.font-decreased{
+            font-size: 16px;
+        }
+    
+        .tour-1, .tour-2{
+            @extend %tour-img-para;
+        }
+    
+        .tour-1{
+            a{
+                &:first-child{
+                    &:hover{
+                        transform: scale(1.05);
+                        transition: all 0.25s ease;
+                    }
+                }
+            }
+
+            .tour-img-1{
+                @extend %tournament-img;
+                background-image: url("../../../assets/australian-open.jpg");
+            }
+
+            .tour-img-3{
+                @extend %tournament-img;
+                background-image: url("../../../assets/wimbledon.jpg");
+            }
+
+            .tour-img-5{
+                @extend %tournament-img;
+                background-image: url("../../../assets/indian-wells.jpg");
+            }
+
+            .tour-img-7{
+                @extend %tournament-img;
+                background-image: url("../../../assets/monte-carlo.jpg");
+            }
+
+            .tour-img-9{
+                @extend %tournament-img;
+                background-image: url("../../../assets/rome.jpg");
+            }
+
+            .tour-img-11{
+                @extend %tournament-img;
+                background-image: url("../../../assets/cincinnati.jpg");
+            }
+
+            .tour-img-13{
+                @extend %tournament-img;
+                background-image: url("../../../assets/paris.jpg");
+            }
+    
+            p.tour-1-para{
+                @extend %tour-paragraph;
+            }
+    
+            p.tour-name{
+                @extend %tour-name;
+            }
+        }
+    
+        .tour-2{
+            a{
+                &:first-child{
+                    &:hover{
+                        transform: scale(1.05);
+                        transition: all 0.25s ease;
+                    }
+                }
+            }
+
+            .tour-img-2{
+                @extend %tournament-img;
+                background-image: url("../../../assets/rolland-garros.jpg");
+            }
+
+            .tour-img-4{
+                @extend %tournament-img;
+                background-image: url("../../../assets/us-open.jpg");
+            }
+
+            .tour-img-6{
+                @extend %tournament-img;
+                background-image: url("../../../assets/miami.jpg");
+            }
+
+            .tour-img-8{
+                @extend %tournament-img;
+                background-image: url("../../../assets/madrid.jpg");
+            }
+
+            .tour-img-10{
+                @extend %tournament-img;
+                background-image: url("../../../assets/toronto.jpg");
+            }
+
+            .tour-img-12{
+                @extend %tournament-img;
+                background-image: url("../../../assets/shanghai.jpg");
+            }
+
+            .tour-img-14{
+                @extend %tournament-img;
+                background-image: url("../../../assets/nitto-finals.jpg");
+            }
+    
+            p.tour-2-para{
+                @extend %tour-paragraph;
+            }
+    
+            p.tour-name{
+                @extend %tour-name;
+            }
+        }
+    }
+
+    .nav-buttons{
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        background-color: rgba(224, 224, 224,0.4);
+        padding: 10px 0 10px 0;
+        margin-top: -30px;
+
+        .prev-btn, .next-btn{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 150px;
+            min-width: 150px;
+            height: 50px;
+            min-height: 50px;
+            font-size: 24px;
+            font-weight: bold;
+            border: 2px solid #000;
+            border-radius: 10px;
+            background-color: rgba(193, 193, 193, 0.8);
+            background-size: cover;
+
+            &:hover{
+                cursor: pointer;
+                transform: scale(1.15);
+                transition: all 0.25s ease;
+            }
+        }
+    }
+}

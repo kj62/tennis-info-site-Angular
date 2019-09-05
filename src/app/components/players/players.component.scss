@@ -1,0 +1,82 @@
+$font-standard: 'Nunito', Helvetica, Arial, sans-serif;
+
+%player-img{
+    display: flex;
+    flex: 1;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width: 1fr;
+    height: 480px;
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+%player-paragraph{
+    margin: 0;
+    font-size: $font-standard;
+    text-shadow: 3px 3px 3px #979797;
+}
+
+%player-name{
+    font-size: 28px;
+    font-weight: bold;
+    font-style: oblique;
+}
+
+%player-img-para{
+    flex: 1;
+    transition: flex 0.8s ease;
+    
+    &:hover{
+        flex: 3;
+        cursor: pointer;
+    }
+
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+.players {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    margin: 0 auto;
+    height: 100%;
+    max-height: 860px;
+    padding-left: 0;
+    font-size: 18px;
+    line-height: 32px;
+    overflow: auto;
+
+    .player{
+        @extend %player-img-para;
+
+        .player-img-1{
+            background-image: url("../../../assets/fed.jpg");
+            @extend %player-img;
+        }
+        .player-img-2{
+            background-image: url("../../../assets/nadal.jpg");
+            @extend %player-img;
+        }
+        .player-img-3{
+            background-image: url("../../../assets/djoko.jpg");
+            @extend %player-img;
+        }
+        .player-img-4{
+            background-image: url("../../../assets/delpo.jpg");
+            @extend %player-img;
+        }
+        
+        p.player-para{
+            @extend %player-paragraph;
+        }
+
+        p.player-name{
+            @extend %player-name;
+        }
+    }
+}

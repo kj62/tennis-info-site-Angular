@@ -1,0 +1,23 @@
+<!-- <transition v-bind:name="transitionHomeElems"> -->
+<div class="home-box">
+  <!-- <p class="welcome-text" [class.small-margin-top]="isMarginDecreased()">Welcome to the ATP Tennis World!</p> -->
+  <p class="welcome-text" [class.small-margin-top]="true">Welcome to the ATP Tennis World!</p>
+  <table class="ranking-list">
+    <th class="ranking-row-title">ATP Ranking {{ fetchedRankingArray?.year }}</th>
+    <tr class="ranking-row-header">
+      <td *ngFor="let header of headersRankingArray">
+        {{ header }}
+      </td>
+    </tr>
+    <!-- <tr class="ranking-list-elem" [class.small-margin-top]="isMarginDecreased()" *ngFor="let position of fetchedRankingArray?.ranking; let incrementIndex = index"> -->
+      <tr class="ranking-list-elem" [class.small-margin-top]="true" *ngFor="let position of fetchedRankingArray?.ranking; let incrementIndex = index">
+      <td class="ranking-row-item">{{ incrementIndex + 1 }}.</td>
+      <td class="ranking-row-item">{{ position?.player }}</td>
+      <td class="ranking-row-item">{{ position?.country }}</td>
+      <td class="ranking-row-item">{{ position?.points }}</td>
+      <td class="ranking-row-item">{{ position?.age }}</td>
+    </tr>
+  </table>
+  <div class="clock">{{ clockDate }}</div>
+</div>
+<!-- </transition> -->

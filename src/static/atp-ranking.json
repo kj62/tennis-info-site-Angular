@@ -1,0 +1,243 @@
+{
+	"year": 2018,
+	"ranking":[
+		{
+			"player": "Rafael Nadal",
+			"country": "ESP",
+			"points": 8760,
+			"age": 32
+		},
+		{
+			"player": "Roger Federer",
+			"country": "SUI",
+			"points": 6900,
+			"age": 37
+		},
+		{
+			"player": "Novak Djokovic",
+			"country": "SRB",
+			"points": 6445,
+			"age": 31
+		},
+		{
+			"player": "Juan Martin del Potro",
+			"country": "ARG",
+			"points": 5980,
+			"age": 30
+		},
+		{
+			"player": "Alexander Zverev",
+			"country": "GER",
+			"points": 4890,
+			"age": 21
+		},
+		{
+			"player": "Marin Cilic",
+			"country": "CRO",
+			"points": 4715,
+			"age": 30
+		},
+		{
+			"player": "Dominic Thiem",
+			"country": "AUT",
+			"points": 3825,
+			"age": 25
+		},
+		{
+			"player": "Grigor Dimitrov",
+			"country": "BUL",
+			"points": 3755,
+			"age": 27
+		},
+		{
+			"player": "Kevin Anderson",
+			"country": "RPA",
+			"points": 3595,
+			"age": 32
+		},
+		{
+			"player": "John Isner",
+			"country": "USA",
+			"points": 3470,
+			"age": 33
+		},
+		{
+			"player": "David Goffin",
+			"country": "BEL",
+			"points": 3275,
+			"age": 27
+		},
+		{
+			"player": "Kei Nishikori",
+			"country": "JPN",
+			"points": 2520,
+			"age": 28
+		},
+		{
+			"player": "Fabio Fognini",
+			"country": "ITA",
+			"points": 2225,
+			"age": 31
+		},
+		{
+			"player": "Diego Schwartzman",
+			"country": "ARG",
+			"points": 2110,
+			"age": 26
+		},
+		{
+			"player": "Stefanos Tsitsipas",
+			"country": "GRE",
+			"points": 1962,
+			"age": 20
+		}
+	],
+	"tournaments": [
+		{
+			"name": "Australian Open",
+			"date": "January",
+			"currentChampion": "Roger Federer"
+		},
+		{
+			"name": "Roland Garros",
+			"date": "May",
+			"currentChampion": "Rafael Nadal"
+		},
+		{
+			"name": "Wimbledon",
+			"date": "June",
+			"currentChampion": "Novak Djokovic"
+		},
+		{
+			"name": "US Open",
+			"date": "August",
+			"currentChampion": "Novak Djokovic"
+		},
+		{
+			"name": "BNP Paribas Indian Wells",
+			"date": "March",
+			"currentChampion": "Juan Martin del Potro"
+		},
+		{
+			"name": "Miami Open",
+			"date": "March",
+			"currentChampion": "John Isner"
+		},
+		{
+			"name": "Monte Carlo Rolex Masters",
+			"date": "April",
+			"currentChampion": "Rafael Nadal"
+		},
+		{
+			"name": "Mutua Madrid Open",
+			"date": "May",
+			"currentChampion": "Alexander Zverev"
+		},
+		{
+			"name": "Rome Internazionali BNL",
+			"date": "May",
+			"currentChampion": "Rafael Nadal"
+		},
+		{
+			"name": "Rogers Cup Toronto/Montreal",
+			"date": "August",
+			"currentChampion": "Rafael Nadal"
+		},
+		{
+			"name": "Western & Southern Cincinnati Open",
+			"date": "August",
+			"currentChampion": "Novak Djokovic"
+		},
+		{
+			"name": "Shanghai Rolex Masters",
+			"date": "October",
+			"currentChampion": "Roger Federer"
+		},
+		{
+			"name": "Paris Rolex Masters",
+			"date": "October",
+			"currentChampion": "Jack Sock"
+		},
+		{
+			"name": "ATP Nitto London Finals",
+			"date": "November",
+			"currentChampion": "Grigor Dimitrov"
+		}
+	],
+	"technique": [
+		{
+			"stroke": "Forehand",
+			"type": "Basic - groundstroke"
+		},
+		{
+			"stroke": "One-handed backhand",
+			"type": "Basic - groundstroke"
+		},
+		{
+			"stroke": "Two-handed backhand",
+			"type": "Basic - groundstroke"
+		},
+		{
+			"stroke": "Serve - slice/kick/flat serve",
+			"type": "Basic"
+		},
+		{
+			"stroke": "Slice",
+			"type": "Basic - groundstroke"
+		},
+		{
+			"stroke": "Return",
+			"type": "Basic - groundstroke"
+		},
+		{
+			"stroke": "Volley",
+			"type": "Basic - net"
+		},
+		{
+			"stroke": "Smash",
+			"type": "Basic - net"
+		},
+		{
+			"stroke": "Dropshot",
+			"type": "Special"
+		},
+		{
+			"stroke": "Lob",
+			"type": "Special"
+		},
+		{
+			"stroke": "Passing Shot",
+			"type": "Special"
+		},
+		{
+			"stroke": "Inside-Out Forehand",
+			"type": "Special"
+		},
+		{
+			"stroke": "Inside-In Forehand",
+			"type": "Special"
+		},
+		{
+			"stroke": "Half-volley",
+			"type": "Special"
+		}
+	],
+	"players": [
+		{
+			"name": "Roger Federer",
+			"attribute": "All-round technique master"
+		},
+		{
+			"name": "Rafael Nadal",
+			"attribute": "Most persistent top-spin forehand warrior"
+		},
+		{
+			"name": "Novak Djokovic",
+			"attribute": "World's best returner with superb down-the-line two-handed backhand"
+		},
+		{
+			"name": "Juan Martin del Potro",
+			"attribute": "Flat forehand gunner"
+		}
+	]
+}

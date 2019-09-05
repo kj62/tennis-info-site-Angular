@@ -1,0 +1,22 @@
+<div class="technique" [class.font-decreased]="isAppBoxWidthSmall()">
+  <div class="technique-box">
+    <div class="technique-1">
+      <iframe width="640" height="360" [attr.src]="setVidSrc(currentTechniqueIndex) | ytVideo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <p *ngIf="fetchedTechniqueArray?.technique" class="technique-1-para technique-name">{{ fetchedTechniqueArray?.technique[currentTechniqueIndex]?.stroke }}</p>
+      <p *ngIf="fetchedTechniqueArray?.technique" class="technique-1-para">Stroke type: {{ fetchedTechniqueArray?.technique[currentTechniqueIndex]?.type }}</p>
+    </div>
+    <div class="technique-2">
+      <iframe width="640" height="360" [attr.src]="setVidSrc(currentTechniqueIndex + 1) | ytVideo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <p *ngIf="fetchedTechniqueArray?.technique" class="technique-2-para technique-name">{{ fetchedTechniqueArray?.technique[currentTechniqueIndex + 1]?.stroke }}</p>
+      <p *ngIf="fetchedTechniqueArray?.technique" class="technique-2-para">Stroke type: {{ fetchedTechniqueArray?.technique[currentTechniqueIndex + 1]?.type }}</p>
+    </div>
+  </div>
+  <div class="nav-buttons">
+    <div *ngIf="currentTechniqueIndex" (click)="decrementTechniqueVidIndex()" class="prev-btn">
+      Previous
+    </div>
+    <div *ngIf="isTechniqueListEnd()" (click)="incrementTechniqueVidIndex()" class="next-btn">
+      Next
+    </div>
+  </div>
+</div>
